@@ -17,6 +17,8 @@ import {
   FileText,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import blakeHeadshot from "@/assets/blake-headshot.png";
+import cityscapeLayer from "@/assets/cityscape-layer.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 16 },
@@ -511,7 +513,7 @@ function About() {
                 className="shrink-0 focus:outline-none focus:ring-2 focus:ring-accent/30 focus:ring-offset-2 rounded-2xl w-fit"
               >
                 <img
-                  src="/blake-headshot.png"
+                  src={blakeHeadshot}
                   alt="Blake Cowan"
                   className="w-40 h-40 sm:w-44 sm:h-44 rounded-2xl object-cover shadow-md border border-border/60 hover:shadow-lg transition-shadow"
                 />
@@ -806,23 +808,28 @@ export default function JBCAdvisorySite() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50/40 to-background text-foreground tracking-tight">
       <Nav />
-      <div className="w-full min-w-full overflow-hidden border-b border-border/80 leading-[0]">
+      <div
+        className="relative h-44 w-full overflow-hidden border-b border-border/80 sm:h-52 md:h-60 lg:h-72"
+        aria-hidden
+      >
         <img
-          src="/cityscape-banner.png"
-          alt="Cityscapes of Memphis, Hong Kong, and San Francisco"
-          className="block w-full min-w-full object-cover object-center sm:h-44 md:h-52 lg:h-60 xl:h-72"
-          style={{ filter: "contrast(0.96) grayscale(0.12)" }}
+          src={cityscapeLayer}
+          alt=""
+          className="absolute inset-0 block h-full w-full object-cover object-center opacity-30"
+          style={{ mixBlendMode: "lighten" }}
         />
       </div>
-      <Hero />
-      <CredibilityStrip />
-      <Services />
-      <Outcomes />
-      <Engagement />
-      <About />
-      <ClientSuccesses />
-      <Contact />
-      <Footer />
+      <div>
+        <Hero />
+        <CredibilityStrip />
+        <Services />
+        <Outcomes />
+        <Engagement />
+        <About />
+        <ClientSuccesses />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
