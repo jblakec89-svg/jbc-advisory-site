@@ -684,17 +684,15 @@ function Contact() {
             </CardHeader>
             <CardContent>
               <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  alert(
-                    "This is a demo form. Wire it to your email provider (e.g., Formspree) or CRM (HubSpot)."
-                  );
-                }}
+                action="https://formspree.io/f/maqjkkvz"
+                method="POST"
                 className="space-y-4"
               >
                 <div>
                   <label className="text-sm">Name</label>
                   <input
+                    name="name"
+                    required
                     className="mt-1 w-full rounded-2xl border bg-background px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
                     placeholder="Your name"
                   />
@@ -703,6 +701,8 @@ function Contact() {
                   <label className="text-sm">Work email</label>
                   <input
                     type="email"
+                    name="email"
+                    required
                     className="mt-1 w-full rounded-2xl border bg-background px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
                     placeholder="you@company.com"
                   />
@@ -710,6 +710,7 @@ function Contact() {
                 <div>
                   <label className="text-sm">Company + stage</label>
                   <input
+                    name="company"
                     className="mt-1 w-full rounded-2xl border bg-background px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
                     placeholder="Company, funding stage"
                   />
@@ -717,6 +718,8 @@ function Contact() {
                 <div>
                   <label className="text-sm">What are you trying to accomplish?</label>
                   <textarea
+                    name="message"
+                    required
                     className="mt-1 w-full min-h-[110px] rounded-2xl border bg-background px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
                     placeholder="A few sentences is perfect"
                   />
