@@ -644,7 +644,7 @@ function Contact() {
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
                 <span>
-                  Email: <span className="text-foreground">hello@jbcadvisory.com</span>
+                  Email: <span className="text-foreground">jblakec89@gmail.com</span>
                 </span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
