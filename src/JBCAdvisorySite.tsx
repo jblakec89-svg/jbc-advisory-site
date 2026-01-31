@@ -23,21 +23,17 @@ const fadeUp = {
   show: { opacity: 1, y: 0 },
 };
 
-const fadeIn = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1 },
-};
-
 const stagger = {
   hidden: {},
   show: { transition: { staggerChildren: 0.07 } },
 };
 
-const Container: React.FC<{ children: React.ReactNode; className?: string }> = ({
+const Container: React.FC<{ children: React.ReactNode; className?: string; id?: string }> = ({
   children,
   className = "",
+  id,
 }) => (
-  <div className={`mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 ${className}`}>
+  <div id={id} className={`mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 ${className}`}>
     {children}
   </div>
 );
@@ -56,12 +52,6 @@ function Glow() {
       <div className="absolute -top-56 left-1/2 h-[720px] w-[720px] -translate-x-1/2 rounded-full bg-accent/5 blur-3xl" />
       <div className="absolute -bottom-56 right-[-140px] h-[720px] w-[720px] rounded-full bg-accent/[0.04] blur-3xl" />
     </div>
-  );
-}
-
-function Hairline() {
-  return (
-    <div className="my-10 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent" />
   );
 }
 

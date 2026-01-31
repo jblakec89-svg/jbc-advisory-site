@@ -6,11 +6,6 @@ export interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
   ({ className = "", variant = "default", ...props }, ref) => {
-    const variants = {
-      default: "border-transparent bg-primary text-primary-foreground",
-      secondary: "border-transparent bg-secondary text-secondary-foreground",
-      outline: "text-foreground",
-    };
     const v = variant === "default" ? "bg-foreground text-background" : variant === "secondary" ? "bg-muted text-muted-foreground" : "border border-input";
     return (
       <div
