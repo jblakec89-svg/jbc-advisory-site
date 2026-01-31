@@ -34,12 +34,12 @@ html, body {
   min-height: 100vh;
 }
 
-/* Banner: show more of bottom on desktop */
+/* Banner: show more of bottom */
 .banner-cityscape {
-  object-position: center 50%;
+  object-position: center 70%;
 }
 @media (min-width: 768px) {
   .banner-cityscape {
-    object-position: center 85%;
+    object-position: center 100%;
   }
 }
