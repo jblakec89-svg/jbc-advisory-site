@@ -93,12 +93,11 @@ function Nav() {
     { label: "Contact", href: "#contact" },
   ];
   return (
-    <div className="sticky top-0 z-50 border-b bg-background/60 backdrop-blur-2xl">
+    <div className="sticky top-0 z-50 border-b border-border/80 bg-background/80 backdrop-blur-xl">
       <Container className="py-3 flex items-center justify-between gap-4">
         <a href="#" className="flex items-center gap-2">
-          {/* Bottom-right logo style: JBC | ADVISORY */}
           <div className="flex items-baseline gap-2">
-            <div className="font-semibold text-lg tracking-tight">JBC</div>
+            <div className="font-semibold text-lg tracking-tight text-foreground">JBC</div>
             <div className="h-5 w-px bg-muted-foreground/60" />
             <div className="text-xs tracking-[0.25em] text-muted-foreground">
               ADVISORY
@@ -394,11 +393,11 @@ function Engagement() {
   const modes = [
     {
       title: "Sprint (2–3 weeks)",
-      desc: "Diagnose + align. Ideal when you need a fast, grounded plan: ad hoc projects in need of a leader",
+      desc: "Diagnose + align. Ideal when you need a fast, grounded plan for a specific project",
       items: [
         "Operating assessment",
         "KPI map + reporting outline",
-        "Cross-functional program management",
+        "Program Management",
         "Optional exec alignment workshop",
       ],
       cta: "Start with a sprint",
@@ -446,7 +445,7 @@ function Engagement() {
               <div className="flex items-center justify-between gap-3">
                 <CardTitle className="text-base">{m.title}</CardTitle>
                 {m.featured ? (
-                  <Badge className="rounded-full">Most common</Badge>
+                  <Badge className="rounded-full">Recommended</Badge>
                 ) : null}
               </div>
               <div className="mt-2 text-sm text-muted-foreground leading-relaxed">
@@ -508,7 +507,7 @@ function About() {
           <Card className="rounded-3xl">
             <CardContent className="p-6 space-y-5">
 
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="pt-4 text-sm text-muted-foreground leading-relaxed">
                 Blake started JBC Advisory to bring that same operator mindset to founders and
                 leadership teams who want practical, high-leverage help — not slide decks or
                 recycled Big 4 frameworks. He values relationships over transactions, action over perfection, and has a disdain for bullshit and bureacracy. 
@@ -740,13 +739,12 @@ function Contact() {
 }
 
 function Footer() {
-  const logoSrc = "/jbc-mark.png";
   return (
     <div className="border-t">
       <Container className="py-10">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <img src={logoSrc} alt="JBC Advisory" className="h-7 w-auto" />
+            <img src="/jbc-logo.png" alt="JBC Advisory" className="h-7 w-auto sm:h-8" />
             <div className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} JBC Advisory. All rights reserved.
             </div>
