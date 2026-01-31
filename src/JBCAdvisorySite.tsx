@@ -498,11 +498,41 @@ function About() {
     <div id="about" className="bg-muted/30 border-y">
       <Container className="py-14 sm:py-18">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] items-start">
-          <SectionTitle
-            eyebrow="Founder"
-            title="Operator-led advisory, built on real scale-up experience"
-            subtitle="JBC Advisory is founded by Blake Cowan,  a growth-stage SaaS operator who has spent the last decade building and running Business Operations, Finance, and Analytics inside leading software companies such as LinkedIn, Invision, Invoice2go, and BILL.com." 
-          />
+          <div className="space-y-6">
+            <SectionTitle
+              eyebrow="Founder"
+              title="Operator-led advisory, built on real scale-up experience"
+            />
+            <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <a
+                href="https://www.linkedin.com/in/blakecowan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 focus:outline-none focus:ring-2 focus:ring-accent/30 focus:ring-offset-2 rounded-2xl w-fit"
+              >
+                <img
+                  src="/blake-headshot.png"
+                  alt="Blake Cowan"
+                  className="w-40 h-40 sm:w-44 sm:h-44 rounded-2xl object-cover shadow-md border border-border/60 hover:shadow-lg transition-shadow"
+                />
+              </a>
+              <div className="min-w-0">
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  JBC Advisory is founded by Blake Cowan, a growth-stage SaaS operator who has spent the last decade building and running Business Operations, Finance, and Analytics inside leading software companies such as LinkedIn, Invision, Invoice2go, and BILL.com.
+                </p>
+                <p className="mt-3 text-xs text-muted-foreground">
+                  <a
+                    href="https://www.linkedin.com/in/blakecowan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent hover:underline"
+                  >
+                    Connect on LinkedIn →
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
 
           <Card className="rounded-3xl">
             <CardContent className="p-6 space-y-5">
