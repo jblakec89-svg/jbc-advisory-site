@@ -18,7 +18,6 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import blakeHeadshot from "@/assets/blake-headshot.png";
-import cityscapeLayer from "@/assets/cityscape-layer.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 16 },
@@ -813,9 +812,9 @@ export default function JBCAdvisorySite() {
         aria-hidden
       >
         <img
-          src={cityscapeLayer}
+          src="/cityscape-layer.png"
           alt=""
-          className="absolute inset-0 block h-full w-full object-cover object-center opacity-30"
+          className="absolute inset-0 block h-full w-full object-cover object-center opacity-40"
           style={{ mixBlendMode: "lighten" }}
         />
       </div>
