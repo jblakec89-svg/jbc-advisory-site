@@ -33,3 +33,13 @@ html, body {
 #root {
   min-height: 100vh;
 }
+
+/* Banner: show more of bottom on desktop */
+.banner-cityscape {
+  object-position: center 50%;
+}
+@media (min-width: 768px) {
+  .banner-cityscape {
+    object-position: center 85%;
+  }
+}

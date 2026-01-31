@@ -95,7 +95,7 @@ function Nav() {
   ];
   return (
     <div className="sticky top-0 z-50 border-b border-border/80 bg-background/80 backdrop-blur-xl">
-      <Container className="py-3 flex items-center justify-between gap-4">
+      <Container className="py-2 flex items-center justify-between gap-4 sm:py-3">
         <a href="#" className="flex items-center gap-2">
           <div className="flex items-baseline gap-2">
             <div className="font-semibold text-lg tracking-tight text-foreground">JBC</div>
@@ -133,7 +133,7 @@ function Hero() {
     <div className="relative overflow-hidden">
       <Glow />
 
-      <Container className="pt-8 pb-12 sm:pt-10 sm:pb-16">
+      <Container className="pt-4 pb-12 sm:pt-10 sm:pb-16">
         <motion.div
           variants={stagger}
           initial="hidden"
@@ -807,11 +807,11 @@ export default function JBCAdvisorySite() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50/40 to-background text-foreground tracking-tight">
       <Nav />
-      <div className="w-full min-w-full overflow-hidden border-b border-border/80 leading-[0]">
+      <div className="w-full min-w-full overflow-hidden border-b border-border/80 leading-[0] h-16 sm:h-28 md:h-36 lg:h-40 xl:h-44">
         <img
           src="/cityscape-banner.png"
           alt="Cityscapes of Memphis, Hong Kong, and San Francisco"
-          className="block w-full min-w-full object-cover object-center sm:h-44 md:h-52 lg:h-60 xl:h-72"
+          className="banner-cityscape block h-full w-full min-w-full object-cover"
           style={{ filter: "contrast(0.96) grayscale(0.12)" }}
         />
       </div>
