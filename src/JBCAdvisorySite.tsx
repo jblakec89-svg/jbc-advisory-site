@@ -811,7 +811,7 @@ export default function JBCAdvisorySite() {
         <img
           src="/cityscape-banner.png"
           alt="Cityscapes of Memphis, Hong Kong, and San Francisco"
-          className="banner-cityscape block h-full w-full object-cover object-center"
+          className="banner-cityscape flex flex-wrap box-content h-fit w-fit object-cover object-center"
           style={{ filter: "contrast(0.96) grayscale(0.12)" }}
         />
       </div>
