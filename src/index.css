@@ -34,9 +34,9 @@ html, body {
   min-height: 100vh;
 }
 
-/* Banner: show more of bottom */
+/* Banner: center on mobile, show bottom on desktop */
 .banner-cityscape {
-  object-position: center 70%;
+  object-position: center 50%;
 }
 @media (min-width: 768px) {
   .banner-cityscape {
