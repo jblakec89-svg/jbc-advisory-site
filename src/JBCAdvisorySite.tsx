@@ -807,7 +807,7 @@ export default function JBCAdvisorySite() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50/40 to-background text-foreground tracking-tight">
       <Nav />
-      <div className="w-full min-w-full overflow-hidden border-b border-border/80 leading-[0] h-64 sm:h-80 md:h-96 lg:h-[28rem] xl:h-[32rem]">
+      <div className="w-full min-w-full overflow-hidden border-b border-border/80 leading-[0] h-24 sm:h-28 md:h-32 lg:h-36 xl:h-40">
         <img
           src="/cityscape-banner.png"
           alt="Cityscapes of Memphis, Hong Kong, and San Francisco"
