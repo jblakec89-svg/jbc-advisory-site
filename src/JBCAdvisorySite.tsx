@@ -807,12 +807,12 @@ export default function JBCAdvisorySite() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50/40 to-background text-foreground tracking-tight">
       <Nav />
-      <div className="w-full min-w-full overflow-hidden border-b border-border/80 leading-[0]">
+      <div className="w-full min-w-full overflow-hidden border-b border-border/80 leading-[0] h-24 sm:h-36 md:h-44">
         <img
           src="/cityscape-banner.png"
           alt="Cityscapes of Memphis, Hong Kong, and San Francisco"
-          className="banner-cityscape block object-cover object-center"
-          style={{ height: "fit-content", width: "fit-content", filter: "contrast(0.96) grayscale(0.12)" }}
+          className="banner-cityscape block h-full w-full object-cover object-center"
+          style={{ filter: "contrast(0.96) grayscale(0.12)" }}
         />
       </div>
       <div>
