@@ -34,7 +34,7 @@ const Container: React.FC<{ children: React.ReactNode; className?: string; id?: 
   className = "",
   id,
 }) => (
-  <div id={id} className={`mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 ${className}`}>
+  <div id={id} className={`mx-auto w-full max-w-6xl px-2 sm:px-3 lg:px-4 ${className}`}>
     {children}
   </div>
 );
@@ -94,8 +94,8 @@ function Nav() {
     { label: "Contact", href: "#contact" },
   ];
   return (
-    <div className="sticky top-0 z-50 border-b border-border/80 bg-background/80 backdrop-blur-xl">
-      <Container className="py-2 flex items-center justify-between gap-4 sm:py-3">
+    <div className="sticky top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-xl">
+      <Container className="py-1.5 flex items-center justify-between gap-4 sm:py-2">
         <a href="#" className="flex items-center gap-2">
           <div className="flex items-baseline gap-2">
             <div className="font-semibold text-lg tracking-tight text-foreground">JBC</div>
@@ -180,7 +180,7 @@ function Hero() {
                 (t) => (
                   <div
                     key={t}
-                    className="rounded-2xl border bg-background/60 px-4 py-3 text-sm"
+                    className="rounded-2xl border bg-background/60 px-3 py-2 text-sm"
                   >
                     <div className="flex items-center gap-2">
                       <CheckCircle2 className="h-4 w-4" />
@@ -238,8 +238,8 @@ function Hero() {
 
 function CredibilityStrip() {
   return (
-    <div className="border-y bg-muted/30">
-      <Container className="py-8">
+    <div className="border-y border-border/50 bg-muted/30">
+      <Container className="py-4">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="text-sm text-muted-foreground">
             Operator experience across leading SaaS businesses.
@@ -253,7 +253,7 @@ function CredibilityStrip() {
             ].map((x) => (
               <div
                 key={x}
-                className="rounded-2xl border bg-background px-4 py-3 text-xs sm:text-sm"
+                className="rounded-2xl border bg-background px-3 py-2 text-xs sm:text-sm"
               >
                 {x}
               </div>
@@ -300,7 +300,7 @@ function Services() {
   ];
 
   return (
-    <Container id="services" className="py-16 sm:py-24">
+    <Container id="services" className="py-6 sm:py-10">
       <div className="grid gap-10 lg:grid-cols-[1fr_1fr] items-end">
         <SectionTitle
           eyebrow="Services"
@@ -366,8 +366,8 @@ function Outcomes() {
   ];
 
   return (
-    <div id="outcomes" className="bg-muted/30 border-y">
-      <Container className="py-14 sm:py-18">
+    <div id="outcomes" className="bg-muted/30 border-y border-border/50">
+      <Container className="py-6 sm:py-10">
         <SectionTitle
           eyebrow="Outcomes"
           title="The results clients hire JBC for"
@@ -378,7 +378,7 @@ function Outcomes() {
           {outcomes.map((o) => (
             <div
               key={o.k}
-              className="rounded-3xl border bg-background px-6 py-5"
+              className="rounded-3xl border bg-background px-4 py-3"
             >
               <div className="text-sm text-muted-foreground">{o.k}</div>
               <div className="mt-2 font-medium leading-relaxed">{o.v}</div>
@@ -429,7 +429,7 @@ function Engagement() {
   ];
 
   return (
-    <Container id="engagement" className="py-16 sm:py-24">
+    <Container id="engagement" className="py-6 sm:py-10">
       <SectionTitle
         eyebrow="Engagement"
         title="Engagement models"
@@ -472,7 +472,7 @@ function Engagement() {
         ))}
       </div>
 
-      <div className="mt-10 rounded-3xl border bg-background p-6">
+      <div className="mt-10 rounded-3xl border bg-background p-4">
         <div className="grid gap-6 lg:grid-cols-[1fr_1fr] items-start">
           <div>
             <div className="font-medium">What I’ll ask for on day one</div>
@@ -496,8 +496,8 @@ function Engagement() {
 
 function About() {
   return (
-    <div id="about" className="bg-muted/30 border-y">
-      <Container className="py-14 sm:py-18">
+    <div id="about" className="bg-muted/30 border-y border-border/50">
+      <Container className="py-6 sm:py-10">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] items-start">
           <div className="space-y-6">
             <SectionTitle
@@ -536,7 +536,7 @@ function About() {
           </div>
 
           <Card className="rounded-3xl">
-            <CardContent className="p-6 space-y-5">
+            <CardContent className="p-4 space-y-5">
 
               <p className="pt-4 text-sm text-muted-foreground leading-relaxed">
                 Blake started JBC Advisory to bring that same operator mindset to founders and
@@ -602,8 +602,8 @@ function About() {
 
 function ClientSuccesses() {
   return (
-    <div id="client-successes" className="border-y bg-muted/30">
-      <Container className="py-14 sm:py-18">
+    <div id="client-successes" className="border-y border-border/50 bg-muted/30">
+      <Container className="py-6 sm:py-10">
         <SectionTitle
           eyebrow="Client Successes"
           title="Results we've helped teams achieve"
@@ -611,7 +611,7 @@ function ClientSuccesses() {
         />
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           <Card className="rounded-2xl">
-            <CardContent className="p-6 flex flex-col items-center justify-center min-h-[140px]">
+            <CardContent className="p-4 flex flex-col items-center justify-center min-h-[140px]">
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-accent-muted text-accent">
                 <Building2 className="h-5 w-5" />
               </div>
@@ -621,7 +621,7 @@ function ClientSuccesses() {
             </CardContent>
           </Card>
           <Card className="rounded-2xl">
-            <CardContent className="p-6 flex flex-col items-center justify-center min-h-[140px]">
+            <CardContent className="p-4 flex flex-col items-center justify-center min-h-[140px]">
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-accent-muted text-accent">
                 <LineChart className="h-5 w-5" />
               </div>
@@ -631,7 +631,7 @@ function ClientSuccesses() {
             </CardContent>
           </Card>
           <Card className="rounded-2xl">
-            <CardContent className="p-6 flex flex-col items-center justify-center min-h-[140px]">
+            <CardContent className="p-4 flex flex-col items-center justify-center min-h-[140px]">
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-accent-muted text-accent">
                 <FileText className="h-5 w-5" />
               </div>
@@ -641,7 +641,7 @@ function ClientSuccesses() {
             </CardContent>
           </Card>
           <Card className="rounded-2xl">
-            <CardContent className="p-6 flex flex-col items-center justify-center min-h-[140px]">
+            <CardContent className="p-4 flex flex-col items-center justify-center min-h-[140px]">
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-accent-muted text-accent">
                 <Layers className="h-5 w-5" />
               </div>
@@ -658,8 +658,8 @@ function ClientSuccesses() {
 
 function Contact() {
   return (
-    <Container id="contact" className="py-20 sm:py-28">
-      <div className="rounded-[28px] border bg-background p-6 sm:p-10">
+    <Container id="contact" className="py-8 sm:py-14">
+      <div className="rounded-[28px] border bg-background p-4 sm:p-6">
         <div className="grid gap-10 lg:grid-cols-[1fr_1fr] items-start">
           <div>
             <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">
@@ -723,7 +723,7 @@ function Contact() {
                   <input
                     name="name"
                     required
-                    className="mt-1 w-full rounded-2xl border bg-background px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
+                    className="mt-1 w-full rounded-2xl border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
                     placeholder="Your name"
                   />
                 </div>
@@ -733,7 +733,7 @@ function Contact() {
                     type="email"
                     name="email"
                     required
-                    className="mt-1 w-full rounded-2xl border bg-background px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
+                    className="mt-1 w-full rounded-2xl border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
                     placeholder="you@company.com"
                   />
                 </div>
@@ -741,7 +741,7 @@ function Contact() {
                   <label className="text-sm">Company + stage</label>
                   <input
                     name="company"
-                    className="mt-1 w-full rounded-2xl border bg-background px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
+                    className="mt-1 w-full rounded-2xl border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
                     placeholder="Company, funding stage"
                   />
                 </div>
@@ -750,7 +750,7 @@ function Contact() {
                   <textarea
                     name="message"
                     required
-                    className="mt-1 w-full min-h-[110px] rounded-2xl border bg-background px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
+                    className="mt-1 w-full min-h-[110px] rounded-2xl border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-accent/20"
                     placeholder="A few sentences is perfect"
                   />
                 </div>
@@ -771,8 +771,8 @@ function Contact() {
 
 function Footer() {
   return (
-    <div className="border-t">
-      <Container className="py-10">
+    <div className="border-t border-border/50">
+      <Container className="py-6">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <img src="/jbc-logo.png" alt="JBC Advisory" className="h-7 w-auto sm:h-8" />
@@ -807,11 +807,11 @@ export default function JBCAdvisorySite() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50/40 to-background text-foreground tracking-tight">
       <Nav />
-      <div className="w-full min-w-full overflow-hidden border-b border-border/80 leading-[0] h-24 sm:h-28 md:h-32 lg:h-36 xl:h-40">
+      <div className="w-full min-w-full overflow-hidden border-b border-border/40 leading-[0] h-24 sm:h-28 md:h-32 lg:h-36 xl:h-40 relative">
         <img
           src="/cityscape-banner.png"
           alt="Cityscapes of Memphis, Hong Kong, and San Francisco"
-          className="banner-cityscape block w-full h-full object-cover object-center"
+          className="banner-cityscape absolute left-0 w-full h-[600%] top-1/2 -translate-y-1/2 object-cover object-center"
           style={{ filter: "contrast(0.96) grayscale(0.12)" }}
         />
       </div>
