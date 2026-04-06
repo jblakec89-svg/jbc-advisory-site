@@ -164,7 +164,7 @@ function Hero() {
 
             <div className="mt-7 flex flex-col sm:flex-row gap-3">
               <Button asChild size="lg" className="rounded-2xl bg-foreground text-background hover:bg-foreground/90 shadow-sm">
-                <a href="https://calendly.com/blake-cowan" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendly.com/jblakec89/30min" target="_blank" rel="noopener noreferrer">
                   Schedule a 30-min intro <Calendar className="ml-2 h-5 w-5" />
                 </a>
               </Button>
@@ -586,7 +586,7 @@ function About() {
                   <a href="#contact">Contact</a>
                 </Button>
                 <Button asChild className="rounded-2xl">
-                  <a href="https://calendly.com/blake-cowan" target="_blank" rel="noopener noreferrer">
+                  <a href="https://calendly.com/jblakec89/30min" target="_blank" rel="noopener noreferrer">
                     Book intro <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -682,12 +682,12 @@ function Contact() {
                 <span>
                   Scheduling:{" "}
                   <a 
-                    href="https://calendly.com/blake-cowan" 
+                    href="https://calendly.com/jblakec89/30min" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-accent hover:text-accent/80 transition-colors"
                   >
-                    calendly.com/blake-cowan
+                    calendly.com/jblakec89/30min
                   </a>
                 </span>
               </div>
