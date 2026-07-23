@@ -37,12 +37,7 @@ html, body {
   max-height: 9296px;
 }
 
-/* Banner: center on mobile, show bottom on desktop */
+/* Banner: keep skyline centered when vertically cropped */
 .banner-cityscape {
   object-position: center 50%;
-}
-@media (min-width: 768px) {
-  .banner-cityscape {
-    object-position: center 100%;
-  }
 }
