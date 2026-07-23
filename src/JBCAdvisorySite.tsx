@@ -509,12 +509,12 @@ function About() {
                 href="https://www.linkedin.com/in/blakecowan/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 focus:outline-none focus:ring-2 focus:ring-accent/30 focus:ring-offset-2 rounded-2xl w-fit"
+                className="shrink-0 focus:outline-none focus:ring-2 focus:ring-accent/30 focus:ring-offset-2 rounded-full w-fit"
               >
                 <img
                   src={blakeHeadshot}
                   alt="Blake Cowan"
-                  className="w-40 h-40 sm:w-44 sm:h-44 rounded-2xl object-cover shadow-md border border-border/60 hover:shadow-lg transition-shadow"
+                  className="w-40 h-40 sm:w-44 sm:h-44 rounded-full object-cover shadow-md border border-border/60 hover:shadow-lg transition-shadow"
                 />
               </a>
               <div className="min-w-0">
